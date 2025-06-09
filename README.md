@@ -1,65 +1,77 @@
-# Angular 20 Project Structure Template
+# 🏗️ Angular 20 Project Structure Template
 
-> 🧱 Template base para estructurar proyectos Angular 20 de forma escalable, mantenible y alineada con buenas prácticas corporativas.
+> **🧱 Base para estructurar proyectos Angular 20 escalables, mantenibles y alineados con buenas prácticas corporativas.**
 
-## 📁 Estructura de carpetas
+---
+
+## 📁 Estructura de Carpetas
 
 ```bash
 /src
 │
 ├── /app                     # Core de la aplicación
-│   ├── /core               # Servicios singleton, guards, interceptors
-│   ├── /shared             # Módulos, componentes y pipes reutilizables
-│   ├── /features           # Módulos de funcionalidades (lazy-loaded)
-│   ├── /layouts            # Layouts generales de la app (main, auth, etc.)
-│   ├── /store              # Estado global (NgRx u otro)
+│   ├── /core                # Servicios singleton, guards, interceptors
+│   ├── /shared              # Módulos, componentes y pipes reutilizables
+│   ├── /features            # Módulos de funcionalidades (lazy-loaded)
+│   ├── /layouts             # Layouts generales de la app (main, auth, etc.)
+│   ├── /store               # Estado global (NgRx u otro)
 │   └── /app-routing.module.ts
 │
-├── /assets                 # Recursos estáticos (img, icons, etc.)
-├── /environments           # Configs de entorno
+├── /assets                  # Recursos estáticos (img, icons, etc.)
+├── /environments            # Configs de entorno
 │
-└── main.ts                 # Entry point
+└── main.ts                  # Entry point
 ```
 
-🎯 Objetivo
+---
 
-Estandarizar la arquitectura de proyectos Angular para:
+## 🎯 Objetivo
 
-Escalabilidad sin deuda técnica.
+- **Estandarizar** la arquitectura de proyectos Angular para:
+  - 📈 Escalabilidad sin deuda técnica
+  - 🧩 Separación clara de responsabilidades
+  - 🟦 Modularización y soporte para lazy-loading
+  - 🧪 Facilidad de testing y mantenibilidad
 
-Separación clara de responsabilidades.
+---
 
-Soporte inmediato para modularización y lazy-loading.
+## 📦 Stack Sugerido
 
-Facilidad de testing y mantenibilidad.
+- **Angular 20**
+- **RxJS**
+- **NgRx** (opcional pero recomendado)
+- **Angular Material** o **Tailwind** (según necesidades)
+- **ESLint + Prettier + Husky** para control de calidad
 
-📦 Stack sugerido
+---
 
-Angular 20
+## 🚀 Primeros Pasos
 
-RxJS
+1. **Clona el template:**
 
-NgRx (opcional pero recomendado)
+   ```bash
+   git clone https://github.com/FerranPetit97/angular-template.git
+   cd angular-template
+   ```
 
-Angular Material o Tailwind (según caso)
+2. **Instala dependencias y comienza el desarrollo:**
 
-ESLint + Prettier + Husky para control de calidad
+   ```bash
+   npm install
+   npm start
+   ```
 
-🚀 Getting Started
+---
 
-1. Clona el template:
+## 🛠️ Buenas Prácticas
 
-git clone https://github.com/FerranPetit97/angular-template.git
-cd angular-template
+- Cada **feature** debe tener su propio módulo, rutas y servicios.
+- El **core** solo contiene lo que vive toda la vida de la app.
+- **shared** incluye únicamente elementos reutilizables, sin lógica de negocio.
+- Usa **rutas lazy** por defecto, incluso si el módulo solo tiene una pantalla.
+- Servicios globales van en **core**. Evita lógica en componentes.
+- Mantén el código limpio y aplica siempre las herramientas de linting/formateo.
 
-🛠️ Buenas prácticas
+---
 
-· Cada feature tiene su propio módulo, rutas y servicios.
-
-· El core contiene lo que vive toda la vida de la app.
-
-· shared contiene solo elementos reutilizables, sin lógica de negocio.
-
-· Usa rutas lazy por defecto, incluso si el módulo solo tiene una pantalla.
-
-· Servicios globales van en core. Nada de lógica en componentes.
+**¡Construye aplicaciones Angular robustas y escalables desde el inicio! 🚀**
