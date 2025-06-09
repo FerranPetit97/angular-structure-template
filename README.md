@@ -19,6 +19,7 @@
 ├── /environments           # Configs de entorno
 │
 └── main.ts                 # Entry point
+```
 
 🎯 Objetivo
 
@@ -62,4 +63,3 @@ cd angular-template
 · Usa rutas lazy por defecto, incluso si el módulo solo tiene una pantalla.
 
 · Servicios globales van en core. Nada de lógica en componentes.
-```
