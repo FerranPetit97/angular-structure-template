@@ -1,59 +1,65 @@
-# AngularStructureTemplate
+# Angular 20 Project Structure Template
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.1.
+> 🧱 Template base para estructurar proyectos Angular 20 de forma escalable, mantenible y alineada con buenas prácticas corporativas.
 
-## Development server
-
-To start a local development server, run:
+## 📁 Estructura de carpetas
 
 ```bash
-ng serve
+/src
+│
+├── /app                     # Core de la aplicación
+│   ├── /core               # Servicios singleton, guards, interceptors
+│   ├── /shared             # Módulos, componentes y pipes reutilizables
+│   ├── /features           # Módulos de funcionalidades (lazy-loaded)
+│   ├── /layouts            # Layouts generales de la app (main, auth, etc.)
+│   ├── /store              # Estado global (NgRx u otro)
+│   └── /app-routing.module.ts
+│
+├── /assets                 # Recursos estáticos (img, icons, etc.)
+├── /environments           # Configs de entorno
+│
+└── main.ts                 # Entry point
+
+🎯 Objetivo
+
+Estandarizar la arquitectura de proyectos Angular para:
+
+Escalabilidad sin deuda técnica.
+
+Separación clara de responsabilidades.
+
+Soporte inmediato para modularización y lazy-loading.
+
+Facilidad de testing y mantenibilidad.
+
+📦 Stack sugerido
+
+Angular 20
+
+RxJS
+
+NgRx (opcional pero recomendado)
+
+Angular Material o Tailwind (según caso)
+
+ESLint + Prettier + Husky para control de calidad
+
+🚀 Getting Started
+
+1. Clona el template:
+
+git clone https://github.com/FerranPetit97/angular-template.git
+cd angular-template
+
+🛠️ Buenas prácticas
+
+· Cada feature tiene su propio módulo, rutas y servicios.
+
+· El core contiene lo que vive toda la vida de la app.
+
+· shared contiene solo elementos reutilizables, sin lógica de negocio.
+
+· Usa rutas lazy por defecto, incluso si el módulo solo tiene una pantalla.
+
+· Servicios globales van en core. Nada de lógica en componentes.
 ```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
