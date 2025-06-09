@@ -40,7 +40,7 @@
 - **Angular 20**
 - **RxJS**
 - **NgRx** (opcional pero recomendado)
-- **ESLint + Prettier + Husky** para control de calidad
+- **ESLint + Prettier** para control de calidad
 
 ---
 
@@ -49,8 +49,8 @@
 1. **Clona el template:**
 
    ```bash
-   git clone https://github.com/FerranPetit97/angular-template.git
-   cd angular-template
+   git clone https://github.com/FerranPetit97/angular-structure-template.git
+   cd angular-structure-template
    ```
 
 2. **Instala dependencias y comienza el desarrollo:**
