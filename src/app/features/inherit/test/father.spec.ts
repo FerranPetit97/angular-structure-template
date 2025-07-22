@@ -1,18 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SonComponent } from './son.component';
+import { Father } from '../father/father';
 
-describe('Son', () => {
-  let component: SonComponent;
-  let fixture: ComponentFixture<SonComponent>;
+describe('Father', () => {
+  let component: Father;
+  let fixture: ComponentFixture<Father>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SonComponent]
-    })
-    .compileComponents();
+      imports: [Father],
+    }).compileComponents();
 
-    fixture = TestBed.createComponent(SonComponent);
+    fixture = TestBed.createComponent(Father);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

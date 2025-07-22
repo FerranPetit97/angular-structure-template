@@ -3,10 +3,10 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 @Component({
   selector: 'app-son',
   imports: [],
-  templateUrl: './son.component.html',
-  styleUrl: './son.component.css'
+  templateUrl: './son.html',
+  styleUrl: './son.css',
 })
-export class SonComponent {
+export class Son {
   @Input() valor!: number;
   @Output() valorChange = new EventEmitter<number>();
 

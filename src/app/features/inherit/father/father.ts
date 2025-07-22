@@ -1,13 +1,13 @@
 import { ChangeDetectorRef, Component } from '@angular/core';
-import { SonComponent } from '../son/son.component';
+import { Son } from './son/son';
 
 @Component({
   selector: 'app-father',
-  imports: [SonComponent],
-  templateUrl: './father.component.html',
-  styleUrl: './father.component.css',
+  imports: [Son],
+  templateUrl: './father.html',
+  styleUrl: './father.css',
 })
-export class FatherComponent {
+export class Father {
   contador = 0;
 
   constructor(private cd: ChangeDetectorRef) {}

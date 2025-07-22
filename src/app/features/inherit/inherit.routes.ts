@@ -1,9 +1,9 @@
 import { Routes } from '@angular/router';
-import { FatherComponent } from './father/father.component';
+import { Father } from './father/father';
 
 export const routes: Routes = [
   {
     path: '',
-    component: FatherComponent,
+    component: Father,
   },
 ];
